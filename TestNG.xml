@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BUYME Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="org.buyme.utils.listener.TestListener"/>
+	</listeners>
+
+	<test name="Buy me Test Cases" parallel = "methods" thread-count = "2">
+<!--	<test name="Buy me Test Cases">-->
+		<classes>
+			<class name="org.buyme.testcases.BuyMeSanityTest"/>
+			<class name="org.buyme.testcases.extras.ExtraTest"/>
+		</classes>
+	</test>
+</suite>
